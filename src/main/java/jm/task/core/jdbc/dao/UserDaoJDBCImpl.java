@@ -21,7 +21,7 @@ public class UserDaoJDBCImpl implements UserDao {
             statement.executeUpdate("CREATE TABLE IF NOT EXISTS users (`id` int NOT NULL AUTO_INCREMENT PRIMARY KEY ,\n" +
                     "  `name` varchar(45) NOT NULL,\n" +
                     "  `lastname` varchar(45) NOT NULL,\n" +
-                    "  `age` int DEFAULT NULL)");
+                    "  `age` TINYINT DEFAULT NULL)");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
