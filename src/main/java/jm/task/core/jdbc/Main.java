@@ -7,19 +7,19 @@ public class Main {
     private final static UserService userService = new UserServiceImpl();
 
     public static void main(String[] args) {
-        userService.createUsersTable();
-
-        userService.saveUser("Boris", "Britva", (byte) 21);
+       userService.createUsersTable();
+//
+      userService.saveUser("Boris", "Britva", (byte) 21);
         userService.saveUser("Alex", "Petrov", (byte) 21);
         userService.saveUser("Ivan", "Ivanov", (byte) 21);
         userService.saveUser("Ivan", "Petrov", (byte) 21);
+//
+//        userService.removeUserById(3);
 
-        userService.removeUserById(3);
+        System.out.println(userService.getAllUsers());
 
-        userService.getAllUsers();
-
-        userService.cleanUsersTable();
-
-        userService.dropUsersTable();
+//        userService.cleanUsersTable();
+//
+//        userService.dropUsersTable();
     }
 }
