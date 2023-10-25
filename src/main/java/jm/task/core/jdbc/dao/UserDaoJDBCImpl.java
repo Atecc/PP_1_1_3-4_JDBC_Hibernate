@@ -1,10 +1,10 @@
 package jm.task.core.jdbc.dao;
 
-import com.sun.xml.bind.v2.model.core.ID;
+
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 
-import javax.persistence.Id;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
